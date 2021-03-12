@@ -22,7 +22,6 @@ names_as_series = pd.Series(names_list)
 
 names_as_series.value_counts().to_dict()
 
-
-
+names_as_series.to_csv("data/our_names.txt")
 
 # Data Frame
