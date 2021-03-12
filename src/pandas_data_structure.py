@@ -72,3 +72,16 @@ new_df
 
 # OR
 df[(df['workshops_attended'] > 6) | (df['random_nums'] <= 40)]
+
+my_new_df = pd.read_csv("https://raw.githubusercontent.com/ChanR-Community/Python_DS_Ecosystem_I/rishov/data/random_numbers.csv")
+
+my_new_df.head()
+
+# Reading Data into Pandas from HTML
+my_df = pd.read_html('data/bruno_mars_table.html')
+
+my_df = my_df[0]
+
+my_df.head()
+
+my_df['Publisher'].value_counts()
